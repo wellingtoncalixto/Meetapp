@@ -10,10 +10,9 @@
 
 ### Explicações para conseguir rodar o projeto.
 
- 1. clone esse repositorio com:
- obs: vale lembra que esse repositorio não contem só a aplicaçãode Meetup e sim o conteudo todo desenvolvido durante as aulas. 
+ 1. clone esse repositorio com: 
  ```
- git clone git@github.com:wellingtoncalixto/Gostack8.0-RocketSeat.git
+ git clone https://github.com/wellingtoncalixto/Meetapp
  ```
 
  2. Após isso entre no site do __Node__ e instale a versão estavel dele, nesse projeto foi usado a v10.16.3 que era a versão estavel.
@@ -23,14 +22,15 @@
 <a href="https://yarnpkg.com/en/docs/install#debian-stable">Click aqui para baixar o yarn </a>
 
 
-Com o Node e o yarn instalados você já pode entrar na pasta Gostack8.0-RocketSeat/Meetapp dentro desta pasta vai estar 3 pastas que são: 
- * meetapp -> que é a API da aplicação, desenvolvida com NodeJs.
- * meetapp-front -> a parte web da aplicação, desenvolvida em React
+Com o Node e o yarn instalados você já pode abri a pasta dentro desta pasta vai estar 3 pastas que são: 
+ * backend -> que é a API da aplicação, desenvolvida com NodeJs.
+ * frontend -> a parte web da aplicação, desenvolvida em React
  * e a mobile -> desenvovida com React-Native, obs: a parte mobile foi desenvolvida com base em Android, por isso não sei como o designer funcionaria em IOS por isso teste em Android, farei as adaptações para IOS em breve 
 
 ### Rodando o BackEnd
 
 Para conseguir rodar o backend é preciso ter instalado o docker, irei deixar o link para download aqui e assim que entrar no site procure as orientações para instalar no seu sistemas operacional 
+
 <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Click aqui para baixar o docker para Linux </a>
 <a href="https://docs.docker.com/docker-for-windows/install/">Click aqui para baixar o docker para Windows e Mac </a>
 
@@ -54,7 +54,7 @@ com esse ultimo comando rodado sera criando um container de redis para trabalho 
 
 Após isso baixe o Postbird e MongoDB Comunity para visualizar os dados se quiser.
 
-Em seguida no em linha de comando execute:
+Em seguida execute abra a pasta backend e execute o comando a baixo:
 
 ```
 yarn 
@@ -89,7 +89,7 @@ SENTRY_DNS=
 
 ```
 
-Depois disso ao executar: 
+Depois disso ao execute: 
 
 ```
 yarn dev
@@ -100,7 +100,7 @@ A API já deve estar rodando normalmente
 
 ### Rodando o FrontEnd e Mobile
 
-O front e o Mobile é bem mais facil é só entrar na pasta do projeto e executar:
+O front e o Mobile é bem mais facil é só entrar na pasta de cada um e executar:
 
 ```
 yarn 
@@ -108,3 +108,11 @@ yarn
 yarn star
 ```
 o primeiro como no back ira instalar as dependencias necessarias e o start vai iniciar o projeto 
+
+Para mobile você tera que ter ou um emuldador ou um celular android, o link a baixa ira mostar como baixar o emulador ou de quiser executar o aplicativo no seu proprio celular:
+
+<a href="https://docs.rocketseat.dev/ambiente-react-native/introducao">Docs RocketSeat</a>
+
+Feito todos os passos o projeto deve estar funcionando sem problemas. 
+
+Aceito sujestões de como melhorar ele. 
